@@ -1,0 +1,52 @@
+body {
+  background-color: var(--background-color);
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.advice {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--advice-card-color);
+  border-radius: 10px;
+  width: 345px;
+  margin: 20px;
+}
+
+.advice .advice-id {
+  color: var(--advice-dice-color);
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-top: 30px;
+  letter-spacing: 5px;
+}
+
+.advice .advice-description {
+  font-size: 20px;
+  padding: 23px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.advice .advice-update {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  transform: translateY(50%);
+  background-color: var(--advice-dice-color);
+}
+
+.advice .advice-update:hover {
+  color: #53ffab;
+  cursor: pointer;
+  box-shadow: 0 5px 15px var(--advice-dice-color);
+}
